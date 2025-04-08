@@ -15,3 +15,26 @@ h2 {
     margin: 0;
 }
 
+.input-bar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.input-bar input {
+    height: calc(1em); 
+    padding: 8px; 
+    font-size: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    height: calc(2em + 2px); 
+    padding: 8px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

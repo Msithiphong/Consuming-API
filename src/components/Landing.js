@@ -19,9 +19,8 @@ function Landing({ loadHoliday }) {
 
     return(
         <>
-            <h1>Holidays Viewer</h1>
-            <h2>Public Holidays Finder</h2>
-            <div>
+            <h1>Public Holidays Finder</h1>
+            <div className="input-bar">
                 <input
                     type="text"
                     placeholder="Enter Country Code"

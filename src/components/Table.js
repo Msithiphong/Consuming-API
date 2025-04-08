@@ -1,6 +1,5 @@
 import './Table.css';
 function Table({ holiday }) {     
-          
     return(
         <div className="table-container">
             <table>
