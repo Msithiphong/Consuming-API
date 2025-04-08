@@ -1,5 +1,6 @@
 import { useState } from 'react';
-function Landing( loadHoliday ) {
+import './Landing.css'
+function Landing({ loadHoliday }) {
     const [countryCode, setCountryCode] = useState('');
     const [year, setYear] = useState('');
 
@@ -12,7 +13,8 @@ function Landing( loadHoliday ) {
     };
 
     const handleSubmit = () => {
-        loadHoliday(countryCode, year);
+        if (countryCode && year)
+            loadHoliday(countryCode, year);
     };
 
     return(
@@ -34,6 +36,7 @@ function Landing( loadHoliday ) {
                     onChange={handleYearChange}
                 />
                 <button onClick={handleSubmit}>Submit</button>
+                
             </div>
         </>
         
